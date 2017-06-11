@@ -47,6 +47,9 @@ input[type=text], input[type=password], textarea {
     .menu li.active { /* non-space between li and .active to make sure font-weight: bold on active class works*/
         font-weight: bold;
     }
+    .menu li a {
+        color: #eee;
+    }
 
 #sidebar {
     background-color: #2a2c36;
