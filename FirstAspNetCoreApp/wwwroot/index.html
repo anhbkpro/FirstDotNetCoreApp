@@ -4,26 +4,38 @@
     <title>The World</title>
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/site.css"/>
 
 </head>
 <body>
-    <div>
-        <h2>The World</h2>
-        <form>
-            <div>
-                <label>Date</label>
-                <input />
-            </div>
-            <div>
-                <label>Location</label>
-                <input />
-            </div>
-            <div><input type="submit" value="Add" /></div>
-        </form>
+    <div id="sidebar">
+        <img src="img/people.png" alt="headshot" class="headshot" />
+        <span>Lai Anh</span>
+        <ul class="menu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
+
     <div>
-        &copy; 2017 The World Ltd.
+        <div id="main">
+            <h2>The World</h2>
+            <form>
+                <div>
+                    <label>Date</label>
+                    <input />
+                </div>
+                <div>
+                    <label>Location</label>
+                    <input />
+                </div>
+                <div><input type="submit" value="Add" /></div>
+            </form>
+        </div>
+        <div id="footer">
+            &copy; 2017 The World Ltd.
+        </div>
     </div>
 </body>
 </html>
