@@ -20,13 +20,16 @@
     //});
 
     var $sidebarAndWrapper = $("#sidebar,#wrapper"); // I add $ to $sidebarAndWrapper --> I can more easily as I read it, know that this is a jQuery object
+    var $icon = $("#sidebarToggle i.fa");
 
     $("#sidebarToggle").on("click", function () {
         $sidebarAndWrapper.toggleClass("hide-sidebar"); // hide-sidebar: name of class we will toggle
         if ($sidebarAndWrapper.hasClass("hide-sidebar")) {
-            $(this).text("Show Sidebar");
+            $icon.removeClass("fa-angle-left");
+            $icon.addClass("fa-angle-right");
         } else {
-            $(this).text("Hide Sidebar");
+            $icon.removeClass("fa-angle-right");
+            $icon.addClass("fa-angle-left");
         }
     });
 
